@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact name="TosChatExtension:jar">
+    <output-path>D:/pr/productioin/tosextension</output-path>
+    <root id="root">
+      <element id="archive" name="TosChatExtension.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/out/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="TosChatExtension" />
+        <element id="dir-copy" path="$PROJECT_DIR$/resources" />
+      </element>
+      <element id="library" level="application" name="groovy-2.4.6" />
+    </root>
+  </artifact>
+</component>

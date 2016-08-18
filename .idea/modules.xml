@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TosChatExtension.iml" filepath="$PROJECT_DIR$/TosChatExtension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseminer/baseminer.iml" filepath="$PROJECT_DIR$/baseminer/baseminer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpsocket/httpsocket.iml" filepath="$PROJECT_DIR$/httpsocket/httpsocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threading/threading.iml" filepath="$PROJECT_DIR$/threading/threading.iml" />
+    </modules>
+  </component>
+</project>
