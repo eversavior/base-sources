@@ -3,6 +3,8 @@ package http;
 import core.ApplicationData;
 import core.net.http.HttpDataListenerBase;
 import core.net.http.html.InfoPrinter;
+import game.TosTextGame;
+import game.http.*;
 import http.actions.ActionHooks;
 import http.actions.ActionRestart;
 import http.popups.PopupHooks;
@@ -24,27 +26,29 @@ public class HttpDataListener extends HttpDataListenerBase
         super(currentInfoPrinter);
         this.sessionManager = sessionManager;
         this.applicationData = applicationData;
+
+        initialize();
+        configurePages();
     }
 
     @Override
     protected void configurePages() {
         makeDefaultPages();
-        makeGamePages();
     }
 
-    private void makeGamePages()
+    public void makeGamePages(TosTextGame tosTextGame)
     {
-        //CreateCharacterHook craeteCharacterHook = new CreateCharacterHook(tosTextGame);
-        //createInfoHook(craeteCharacterHook, TosGameHooks.ACTION_CREATE_CHARACTER);
+        CreateCharacterHook craeteCharacterHook = new CreateCharacterHook(tosTextGame);
+        createInfoHook(craeteCharacterHook, TosGameHooks.ACTION_CREATE_CHARACTER);
 
-        //CharactersListHook charactersListHook = new CharactersListHook(tosTextGame);
-        //createInfoHook(charactersListHook, TosGameHooks.ACTION_LIST_CHARACTERS);
+        CharactersListHook charactersListHook = new CharactersListHook(tosTextGame);
+        createInfoHook(charactersListHook, TosGameHooks.ACTION_LIST_CHARACTERS);
 
-        //FightHook fightHook = new FightHook(tosTextGame);
-        //createInfoHook(fightHook, TosGameHooks.ACTION_FIGHT);
+        FightHook fightHook = new FightHook(tosTextGame);
+        createInfoHook(fightHook, TosGameHooks.ACTION_FIGHT);
 
-        //CharacterInfoHook characterInfoHook = new CharacterInfoHook(tosTextGame);
-        //createInfoHook(characterInfoHook, TosGameHooks.ACTION_INFO_CHARACTER);
+        CharacterInfoHook characterInfoHook = new CharacterInfoHook(tosTextGame);
+        createInfoHook(characterInfoHook, TosGameHooks.ACTION_INFO_CHARACTER);
     }
 
     private void makeDefaultPages() {

@@ -24,20 +24,21 @@ public class HttpConnectionSession extends Session
 
     private ApplicationData applicationData;
 
-   // private TosTextGame tosTextGame;
+    private TosTextGame tosTextGame;
 
-    public HttpConnectionSession(ApplicationData applicationData)
+    public HttpConnectionSession(ApplicationData applicationData, TosTextGame tosTextGame)
     {
         super("HttpConnectionSession", HTTP_HANDLER_SESSION);
 
         this.applicationData = applicationData;
-       // this.tosTextGame = tosTextGame;
+        this.tosTextGame = tosTextGame;
 
         httpServer = new HttpServer(GlobalSettings.webPort);
 
 
         htmlInfoPrinter = new HtmlInfoPrinter();
         HttpDataListener httpDataListener = new HttpDataListener(htmlInfoPrinter, sessionManager, applicationData);
+        httpDataListener.makeGamePages(tosTextGame);
 
         httpServer.setListener(httpDataListener);
 

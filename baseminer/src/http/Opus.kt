@@ -162,7 +162,7 @@ class Opus: HtmlInfoWriter()
 
         htmlInfoPrinter.print(info.getContent());
     }
-hs
+
     private  var cache: HashMap<String?, String> = hashMapOf();
 
     private fun getItemName(itemID:String?, itemName:String):String?

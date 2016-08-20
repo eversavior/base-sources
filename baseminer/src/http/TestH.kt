@@ -10,4 +10,3 @@ object TestH {
 
     var testValue = 0
 }
-ер

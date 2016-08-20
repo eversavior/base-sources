@@ -16,8 +16,6 @@ public class HttpDataListenerBase implements HttpDataListener
     public HttpDataListenerBase(InfoPrinter currentInfoPrinter)
     {
         this.currentInfoPrinter = currentInfoPrinter;
-        initialize();
-        configurePages();
     }
 
     protected void initialize()

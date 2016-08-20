@@ -3,8 +3,7 @@ package game.data.character
 import game.data.StatAffixBase
 import groovy.transform.AutoClone
 
-@AutoClone
-class Job : StatAffixBase
+class Job : StatAffixBase, Cloneable
 {
     var description = ""
     var jobName: String = "";
@@ -32,11 +31,5 @@ class Job : StatAffixBase
         this.intelligence = intelligence
         this.vitality = vitality
         this.spirit = spirit
-    }
-
-    @Throws(CloneNotSupportedException::class)
-    fun clone(): Job {
-
-        return clone() as Job
     }
 }

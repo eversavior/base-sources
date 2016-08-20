@@ -21,9 +21,9 @@ classLoader.execute();
 
 
 
-//TosTextGame tosTextGame = new TosTextGame(dataBase);
+TosTextGame tosTextGame = new TosTextGame(dataBase);
 
 def sessionManager = new SessionManager();
 def applicationData = new ApplicationData();
 
-sessionManager.addSession(new HttpConnectionSession(applicationData))
+sessionManager.addSession(new HttpConnectionSession(applicationData, tosTextGame))
