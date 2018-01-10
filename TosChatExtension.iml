@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="false">
+  <component name="FacetManager">
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="hibernate-configuration.xml" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/resources/hibernate-configuration.xml" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -14,8 +25,9 @@
     <orderEntry type="module" module-name="baseminer" />
     <orderEntry type="module" module-name="threading" />
     <orderEntry type="module" module-name="httpsocket" />
-    <orderEntry type="library" name="org.codehaus.groovy:groovy-all:2.4.6" level="application" />
     <orderEntry type="library" name="org.projectlombok:lombok:1.16.8" level="project" />
     <orderEntry type="library" name="mysql:mysql-connector-java:6.0.3" level="project" />
+    <orderEntry type="library" name="org.codehaus.groovy:groovy-all:2.4.6" level="project" />
+    <orderEntry type="module" module-name="trader" />
   </component>
 </module>

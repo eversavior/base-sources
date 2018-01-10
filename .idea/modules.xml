@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/baseminer/baseminer.iml" filepath="$PROJECT_DIR$/baseminer/baseminer.iml" />
       <module fileurl="file://$PROJECT_DIR$/httpsocket/httpsocket.iml" filepath="$PROJECT_DIR$/httpsocket/httpsocket.iml" />
       <module fileurl="file://$PROJECT_DIR$/threading/threading.iml" filepath="$PROJECT_DIR$/threading/threading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../trader/trader.iml" filepath="$PROJECT_DIR$/../trader/trader.iml" />
     </modules>
   </component>
 </project>

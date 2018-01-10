@@ -255,7 +255,7 @@ class Opus: HtmlInfoWriter()
 
     }
 
-    public fun encodeToString(image:BufferedImage, type:String):String
+    fun encodeToString(image:BufferedImage, type:String):String
     {
         var imageString = "";
         var bos = ByteArrayOutputStream();
